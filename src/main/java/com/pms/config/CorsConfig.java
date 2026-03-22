@@ -13,10 +13,7 @@ public class CorsConfig {
         CorsConfiguration config = new CorsConfiguration();
 
         // ✅ Allow BOTH local + deployed frontend
-        config.setAllowedOrigins(List.of(
-                "http://localhost:3000",
-                "placement-frontend-7wjo-git-main-pavithrareddy21s-projects.vercel.app"
-        ));
+        config.setAllowedOrigins(List.of(  "*"));
 
         config.setAllowedMethods(List.of(
                 "GET", "POST", "PUT", "DELETE", "OPTIONS"
